@@ -23,7 +23,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println("MongoDB Connected")
+	fmt.Println("MongoDB Connected!")
 
 	database := client.Database("testdb")
 	collection := database.Collection("test")
@@ -39,3 +39,7 @@ func main() {
 
 	fmt.Println("Query result:", result)
 }
+
+// MongoDB Connected!
+// filter: map[title:test]
+// Query result: map[_id:ObjectID("64a61b8c8f48f12d1a485487") title:test]
